@@ -1,0 +1,18 @@
+<!-- <script type="text/javascript" src="app/assets/javascripts/jquery.autotab.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#first').autotab({ target: '#second', format: 'numeric' });
+    $('#second').autotab({ target: '#third', format: 'numeric', previous: '#first' });
+    $('#third').autotab({ previous: '#second', format: 'numeric' });
+});
+</script> -->
+
+Hi <%= cookies[:user] %>, tell us more about yourself.
+<form >
+  <input type = "radio" name = "gender"/>Male<input type = "radio" name = "gender"/>Female</br>
+  When were you born?<input type = "date"  /></br>
+  What's yo numba?(<input type = "tel" size=3 id="first" maxlength="3"/>)<input type = "tel" size=3 id="second" maxlength="3"/>-<input type = "tel" size=4 id="third" maxlength="4"/></br>
+  <textarea name="message" rows="10" cols="30" placeholder="Tell us about yourself"></textarea>
+  <br>
+  <input type="submit">
+</form>
